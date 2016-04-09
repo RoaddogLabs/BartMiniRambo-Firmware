@@ -39,8 +39,19 @@ __How to Build__
 Windows platforms need the [Rambo driver](http://reprap.org/wiki/File:RAMBo_USBdriver.zip)
 
 
-MiniRambo just like Rambo needs ArduinoAddons to be installed to make use of all the pins. Not installing ArduinoAddons can result in only partially working features. ArduinoAddons can be installed manually or by the new board manager third party url feature. 
+MiniRambo just like Rambo needs ArduinoAddons to be installed to make use of all the pins. Not installing ArduinoAddons can result in only partially working features. ArduinoAddons can be installed manually or by the new board manager third party url feature.  
 
+We recommend building using Arduino IDE 1.6.4 or higher and using the board manager
+
+__Arduino 1.6.4+__
+
+Instead of manually installing the Rambo addon's you can now install them from the Arduino Board Manager. From the Arduino File menu select Preferences. Add the following URL to "Additional Board Manager URLs" section.
+
+`https://raw.githubusercontent.com/ultimachine/ArduinoAddons/master package_ultimachine_index.json`
+
+The Board Manager is found at the top of the Tools->Board selection menu. Open the Board Manager and the list boards will automatically update. At the bottom of the list will be the option to install the RepRap Arduino Mega BOard (RAMBo).
+
+Graphic display support requires the u8glib from https://github.com/olikraus/u8glib
 
 
 The [original README.md](Orig_README.md) from the fork.
