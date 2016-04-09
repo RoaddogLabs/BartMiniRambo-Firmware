@@ -11,6 +11,9 @@ __How to Use__
 
 The settings are preconfigured for the stock configuration as shipped from Roaddog Labs.  There are a few things to know that vary from a Marlin/RAMPS setup.
 
+_YOU DO NOT NEED TO CONFIGURE THE BOARD IF YOU GOT ONE OF OUR KITS_
+_THE BOARD IS READY TO USE RIGHT OUT OF THE BOX_
+
 The stepper motor driver current settings are controlled using PWM.  Those settings are in the [pins_MINIRAMBO.h](./BartMiniRambo/pins_MINIRAMBO.h) file.  It's set for what we use in the Roaddog Labs bot farm. 
 
 `#define DEFAULT_PWM_MOTOR_CURRENT  {900, 900, 850} // XY Z E0 `
@@ -31,11 +34,12 @@ To:
 
 *Note: This fix is only for the Graphical LCD. The bug is caused by the firmware sending the data too fast over the software implementation  of SPI.
 
+__How to Build__
 
 Windows platforms need the [Rambo driver](http://reprap.org/wiki/File:RAMBo_USBdriver.zip)
 
 
-The Rambo board config needs to be installed in the Arduino IDE.
+MiniRambo just like Rambo needs ArduinoAddons to be installed to make use of all the pins. Not installing ArduinoAddons can result in only partially working features. ArduinoAddons can be installed manually or by the new board manager third party url feature. 
 
 
 
